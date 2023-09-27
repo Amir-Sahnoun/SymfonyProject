@@ -1,0 +1,21 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+# config/routes.yaml
+
+app_home:
+    path: /home
+    controller: App\Controller\HomeController::index
+    
+app_service:
+    path: /service
+    controller: App\Controller\ServiceController::index
+
+app_show_service:
+    path: /service/show/{name}
+    controller: App\Controller\ServiceController::showService
+
+app_go_to_index:
+    path: /service/goToIndex
+    controller: App\Controller\ServiceController::goToIndex
