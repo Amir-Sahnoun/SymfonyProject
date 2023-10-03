@@ -19,3 +19,17 @@ app_show_service:
 app_go_to_index:
     path: /service/goToIndex
     controller: App\Controller\ServiceController::goToIndex
+
+show_author:
+    path: '/author/{name}'
+    controller: App\Controller\AuthorController::showAuthor
+    
+list_authors:
+    path: /authors
+    controller: 'App\Controller\AuthorController::list'
+    methods: ['GET']
+
+author_details:
+    path: /details/{id}
+    controller: App\Controller\AuthorController::authorDetails
+    methods: ['GET']
