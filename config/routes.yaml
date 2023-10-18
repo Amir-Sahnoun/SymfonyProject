@@ -33,3 +33,27 @@ author_details:
     path: /details/{id}
     controller: App\Controller\AuthorController::authorDetails
     methods: ['GET']
+
+fetch:
+    path: /fetch
+    controller: App\Controller\StudentController::fetch
+
+add:
+    path: /add
+    controller: App\Controller\StudentController::add
+
+app_student:
+    path: /student
+    controller: App\Controller\StudentController::index
+
+remove:
+    path: '/remove/{id}'
+    controller: App\Controller\StudentController::remove
+
+addF:
+    path: /addF
+    controller: App\Controller\StudentController::addF
+
+edit:
+    path: '/edit/{id}'
+    controller: App\Controller\StudentController::edit
